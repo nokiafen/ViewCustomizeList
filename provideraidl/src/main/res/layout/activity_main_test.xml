@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="add"
+      android:id="@+id/add"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="spread"
+      app:layout_constraintHorizontal_chainStyle="spread"
+      app:layout_constraintBottom_toTopOf="@id/delete"
+      android:onClick="add"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toLeftOf="@+id/delete"
+
+      />
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="delete"
+      android:id="@+id/delete"
+      app:layout_constraintTop_toBottomOf="@id/add"
+      app:layout_constraintBottom_toTopOf="@id/querry"
+      android:onClick="delete"
+      app:layout_constraintLeft_toRightOf="@+id/add"
+      app:layout_constraintRight_toLeftOf="@+id/querry"
+
+      />
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="querry"
+      android:id="@+id/querry"
+      app:layout_constraintTop_toBottomOf="@id/delete"
+      app:layout_constraintBottom_toTopOf="@id/update"
+      android:onClick="querry"
+      app:layout_constraintLeft_toRightOf="@+id/delete"
+      app:layout_constraintRight_toLeftOf="@+id/update"
+
+      />
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="update"
+      android:id="@+id/update"
+      app:layout_constraintTop_toBottomOf="@id/querry"
+      app:layout_constraintBottom_toTopOf="@+id/querrysingle"
+      android:onClick="update"
+      app:layout_constraintLeft_toRightOf="@+id/querry"
+      app:layout_constraintRight_toLeftOf="@+id/querrysingle"
+
+      />
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="querrysingle"
+      android:id="@+id/querrysingle"
+      app:layout_constraintTop_toBottomOf="@id/update"
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:onClick="querrySingle"
+      app:layout_constraintLeft_toRightOf="@+id/update"
+      app:layout_constraintRight_toRightOf="parent"
+
+      />
+</android.support.constraint.ConstraintLayout>

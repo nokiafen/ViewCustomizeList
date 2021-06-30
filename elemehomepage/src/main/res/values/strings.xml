@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">elemehomepage</string>
+  <string name="header_scroller">com.heli.elemehomepage.behaviors.ScrollBehavior </string>
+</resources>

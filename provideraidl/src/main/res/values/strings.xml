@@ -1,0 +1,54 @@
+<resources>
+  <string name="app_name">ProviderApp</string>
+  <string name="title_home">Home</string>
+  <string name="title_dashboard">Dashboard</string>
+  <string name="title_notifications">Notifications</string>
+
+
+  <string-array name="system_access_config" translatable="false">
+    <item>"SYSTEM_1"</item>
+    <item>SYSTEM_2</item>
+    <item>SYSTEM_4</item>
+    <item>SYSTEM_5</item>
+    <item>SYSTEM_6</item>
+    <item>SYSTEM_7</item>
+    <item>SYSTEM_8</item>
+    <item>SYSTEM_9</item>
+  </string-array>
+
+
+  <string-array name="app_access_config" translatable="false">
+    <item>config1</item>
+    <item>config2</item>
+    <item>config3</item>
+    <item>config4</item>
+    <item>config5</item>
+    <item>config6</item>
+    <item>config7</item>
+    <item>config8</item>
+    <item>config9</item>
+    <item>config10</item>
+    <item>config11</item>
+    <item>config12</item>
+    <item>config13</item>
+    <item>config14</item>
+    <!--<item>config15</item>-->
+    <!--<item>config16</item>-->
+    <!--<item>config17</item>-->
+    <!--<item>config18</item>-->
+    <!--<item>config19</item>-->
+    <!--<item>config20</item>-->
+    <!--<item>config21</item>-->
+    <!--<item>config22</item>-->
+    <!--<item>config23</item>-->
+    <!--<item>config24</item>-->
+    <!--<item>config25</item>-->
+    <!--<item>config26</item>-->
+    <!--<item>config27</item>-->
+    <!--<item>config28</item>-->
+    <!--<item>config29</item>-->
+    <!--<item>config30</item>-->
+
+  </string-array>
+
+</resources>

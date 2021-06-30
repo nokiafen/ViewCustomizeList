@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context=".nestscroll.ScrollingActivity">
+
+    <RelativeLayout
+        android:id="@+id/function_area"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/tittle_bar_height"
+        android:background="@mipmap/function_back"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tittle_bar_height"
+        android:background="@mipmap/top_search_back"></RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/scroll_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="800dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/anim_root"
+                layout="@layout/elastic_anim_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/common_func"
+                android:layout_marginTop="-100dp" />
+
+            <ImageView
+                android:id="@+id/common_func"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@mipmap/common_funciton" />
+
+            <ImageView
+                android:id="@+id/scroll_content"
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:layout_below="@+id/anim_root"
+                android:background="@mipmap/long_conent" />
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@mipmap/bottom_bar"></RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

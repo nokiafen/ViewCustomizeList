@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">alihomepage</string>
+  <string name="scroll_behavior">com.heli.alihomepage.scroll_behavior</string>
+  <string name="loose_refresh">松开刷新</string>
+</resources>

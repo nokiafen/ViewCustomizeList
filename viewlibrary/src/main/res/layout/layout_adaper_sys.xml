@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+  <com.heli.viewlibrary.views.VerticalBar
+      android:layout_width="40dp"
+      android:layout_height="180dp"
+      app:bar_color="@color/color_bar"
+      app:back_color="@color/colorPrimaryDark"
+      app:bar_start_color="@color/color_back"
+      app:progress="90"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:id="@+id/verticalBar"
+      />
+</android.support.constraint.ConstraintLayout>
